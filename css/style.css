@@ -349,3 +349,24 @@ section {
         font-size: 2rem;
     }
 }
+/* Unpublished projects: show a status rather than a broken link */
+.project-status {
+    display: inline-block;
+    padding: 0.55rem 0.95rem;
+    background: #f3f4f6;
+    color: #4b5563;
+    border-radius: 999px;
+    font-size: 0.86rem;
+    font-weight: 600;
+}
+.project-card { display: flex; flex-direction: column; align-items: flex-start; }
+.project-card p { flex-grow: 1; }
+section { scroll-margin-top: 65px; }
+
+/* Keep portfolio navigation accessible on phones */
+@media (max-width: 768px) {
+    .nav-content { flex-direction: column; gap: 0.35rem; padding: 0.65rem 0.75rem; }
+    .nav-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.55rem 0.9rem; font-size: 0.76rem; }
+    .hero { padding-top: 165px; }
+    section { scroll-margin-top: 110px; }
+}
